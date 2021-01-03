@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Color Change</title>
+    <style>
+        section>div{
+            width: 100px;
+            height: 50px;
+            background: white;
+            border: 2px solid black;
+            top: 50PX;
+            margin: 10px;
+        }
+        section{
+            position: absolute;
+            top: 300px;
+            bottom: 0;
+            right: 0;
+            left: 350px;
+            margin: auto;
+            display: flex;
+            width: 95vw;
+            height: 200px;
+        }
+        section>div:nth-child(1){
+            top: -73px;
+            left: -130px;
+            position: absolute;
+        }
+        section>div:nth-child(6){
+            top: 70px;
+            left: 495px;
+            position: absolute;
+        }
+        button{
+            position: absolute;
+            font-size: 40px;
+
+        }
+        button:nth-child(2){
+            left: 400px;
+            top: 500px;
+            color: lime;
+        }
+        button:nth-child(3){
+            left: 600px;
+            top: 500px;
+            color: magenta;
+        }
+
+    </style>
+</head>
+<body>
+<section>
+    <div id="1"></div>
+    <div id="2"></div>
+    <div id="3"></div>
+    <div id="4"></div>
+    <div id="5"></div>
+    <div id="6"></div>
+</section>
+<button id="btnStart">START</button>
+<button id="btnStop">STOP</button>
+
+
+<script src="assests/jquery-3.5.1.min.js"></script>
+<script>
+    var timerID
+    var colors =["red","green","orange","blue","pink","purple"]
+    $('#btnStart').click(function () {
+        clearInterval(timerID);
+        timerID =setInterval(setColors,600);
+    })
+
+    function setColors() {
+        for (var i =0 ; i < colors.length; i++){
+            $(`section:nth-child(1)>div:nth-child(${(i+1)})`).css('background',colors[i])
+        }
+        var lastValue = colors.pop();
+        colors.unshift(lastValue);
+    }
+
+    $('#btnStop').click(function () {
+        clearInterval(timerID);
+    })
+</script>
+</body>
+</html>

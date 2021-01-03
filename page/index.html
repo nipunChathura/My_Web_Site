@@ -1,0 +1,690 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Page</title>
+    <link href="../insert/css/normalize.css" rel="stylesheet">
+    <link href="../insert/font-awsome/css/all.min.css">
+    <style>
+        section:nth-child(1){
+            width: 98vw;
+            height: 50px;
+            background: #424c6b;
+        }
+        section:nth-child(1)>div:nth-child(1){
+            position: fixed;
+            z-index: 5;
+            width: 98vw;
+            height: 45px;
+            background: #f39c12;
+        }
+        section:nth-child(1)>div>nav>ul{
+            margin-top: 0;
+            list-style: none;
+        }
+        section:nth-child(1)>div>nav>ul>li{
+            display: inline-block;
+            padding: 10px;
+            padding-left: 85px;
+            font-size: 25px;
+            font-weight: bold;
+            color: rgba(68, 26, -34, 2.87);
+            font-family: 'MuseoModerno', cursive;
+            cursor: pointer;
+        }
+
+        section:nth-child(2){
+            width: 98vw;
+            height: 630px;
+            background: white;
+        }
+        section:nth-child(2)>img:nth-child(1){
+            position: absolute;
+            width: 475px;
+            left: -200px;
+            top: -2px;
+            filter: blur(1px);
+        }
+        section:nth-child(2)>img:nth-child(2){
+            position: absolute;
+
+            width: 1064px;
+            top: 40px;
+
+            left: 274px;
+            right: -167px;
+        }
+        section:nth-child(2)>h1{
+            position: absolute;
+            margin: 0px;
+            font-size: 70px;
+            color: #f39c12;
+            left: 470px;
+            top: 124px;
+            text-decoration-line: underline;
+            text-decoration-color: #f39c12;
+        }
+        section:nth-child(2)>h2{
+            position: absolute;
+            margin: 0px;
+            font-size: 70px;
+            color: #f39c12;
+            left: 630px;
+            top: 208px;
+            text-decoration-line: underline;
+            text-decoration-color: #f39c12;
+        }
+        section:nth-child(2)>h3:nth-child(5){
+            position: absolute;
+            margin: 0px;
+            font-size: 45px;
+            color: white;
+            left: 340px;
+            top: 336px;
+            text-shadow: 9px 14px 6px #bdc3c7;
+        }
+        section:nth-child(2)>h4:nth-child(6){
+            position: absolute;
+            margin: 0px;
+            font-size: 70px;
+            color: #f39c12;
+            left: 310px;
+            top: 40px;
+            text-decoration-line: underline;
+            text-decoration-color: #f39c12;
+        }
+
+        section:nth-child(3){
+            width: 98vw;
+            height: 440px;
+            background: white;
+        }
+        section:nth-child(3)>h1:nth-child(1){
+            position: relative;
+            font-size: 95px;
+            color: #f39c12;
+            margin: 0px;
+            left: 30px;
+            top: -20px;
+            width: 500px;
+            text-shadow: -9px -11px 10px;
+            text-decoration-line: underline;
+            text-decoration-color: #f39c12;
+        }
+        section:nth-child(3)>h2:nth-child(2){
+            position: relative;
+            font-size: 40px;
+            color: #f39c12;
+            margin: 0px;
+            left: 100px;
+            top: -79px;
+            width: 200px;
+            font-style: italic;
+            text-shadow: -9px -11px 10px;
+            text-decoration-line: underline;
+            text-decoration-color: #f39c12;
+        }
+        section:nth-child(3)>div:nth-child(3){
+            position: relative;
+            width: 1000px;
+            height: 300px;
+            background: #2e3138;
+            left: 60px;
+            bottom: 40px;
+            box-shadow: -36px -40px 13px #2e3138;;
+            border-style: outset;
+        }
+        section:nth-child(3)>div:nth-child(3)>p:nth-child(1){
+            position: relative;
+            font-size: 30px;
+            color: #ffffff;
+            margin: 0px;
+            left: 20px;
+            top: 20px;
+        }
+        section:nth-child(3)>img:nth-child(4){
+            width: 250px;
+            position: relative;
+            left: 1080px;
+            /* top: -367px; */
+            bottom: 372px;
+            border-style: groove;
+            border-radius: 10%;
+        }
+
+        section:nth-child(4){
+            width: 98vw;
+            height: 650px;
+            background: white;
+        }
+        section:nth-child(4)>h1:nth-child(1){
+            position: relative;
+            font-size: 92px;
+            font-style: italic;
+            margin: 0px;
+            left: 460px;
+            bottom: 0px;
+            width: 400px;
+            color: #f39c12;
+            text-shadow: -17px -13px 11px black;
+            text-decoration-line: underline;
+        }
+        section:nth-child(4)>div>h1:nth-child(1){
+            position: relative;
+            font-style: revert;
+            color: black;
+            left: 130px;
+            font-size: 30px;
+            /*font-style: oblique;*/
+            width: 400px;
+            top: 60px;
+            margin: 0px;
+        }
+        section:nth-child(4)>div>div:nth-child(2){
+            position: relative;
+            width: 400px;
+            height: 5px;
+            background: white;
+            border-style: groove;
+            left: 130px;
+            top: 60px;
+        }
+        section:nth-child(4)>div>div:nth-child(2)>div{
+            position: relative;
+            height: 5px;
+            width: 80%;
+            background: #229ec4;
+        }
+        section:nth-child(4)>div>h2:nth-child(3){
+            position: relative;
+            font-style: revert;
+            color: black;
+            left: 130px;
+            font-size: 30px;
+            font-style: oblique;
+            width: 400px;
+            top: 106px;
+            margin: 0px;
+        }
+        section:nth-child(4)>div>div:nth-child(4){
+            position: relative;
+            width: 400px;
+            height: 5px;
+            background: white;
+            border-style: groove;
+            left: 130px;
+            top: 105px;
+        }
+        section:nth-child(4)>div>div:nth-child(4)>div{
+            position: relative;
+            height: 5px;
+            width: 70%;
+            background: #229ec4;
+        }
+        section:nth-child(4)>div>h3:nth-child(5){
+            position: relative;
+            font-style: revert;
+            color: black;
+            left: 730px;
+            font-size: 30px;
+            font-style: oblique;
+            width: 400px;
+            top: 150px;
+            margin: 0px;
+        }
+        section:nth-child(4)>div>div:nth-child(6){
+            position: relative;
+            width: 400px;
+            height: 5px;
+            background: white;
+            border-style: groove;
+            left: 730px;
+            top: 149px;
+        }
+        section:nth-child(4)>div>div:nth-child(6)>div{
+            position: relative;
+            height: 5px;
+            width: 60%;
+            background: #229ec4;
+        }
+        section:nth-child(4)>div>h4:nth-child(7){
+            position: relative;
+            color: black;
+            left: 730px;
+            font-size: 30px;
+            font-style: oblique;
+            width: 400px;
+            top: -75px;
+            margin: 0px;
+        }
+        section:nth-child(4)>div>div:nth-child(8){
+            position: relative;
+            width: 400px;
+            height: 5px;
+            background: white;
+            border-style: groove;
+            left: 730px;
+            top: -78px;
+        }
+        section:nth-child(4)>div>div:nth-child(8)>div{
+            position: relative;
+            height: 5px;
+            width: 50%;
+            background: #229ec4;
+        }
+        section:nth-child(4)>div>h5:nth-child(9){
+            position: relative;
+            font-style: revert;
+            color: black;
+            left: 730px;
+            font-size: 30px;
+            font-style: oblique;
+            width: 400px;
+            top: -30px;
+            margin: 0px;
+        }
+        section:nth-child(4)>div>div:nth-child(10){
+            position: relative;
+            width: 400px;
+            height: 5px;
+            background: white;
+            border-style: groove;
+            left: 730px;
+            top: -31px;
+        }
+        section:nth-child(4)>div>div:nth-child(10)>div{
+            position: relative;
+            height: 5px;
+            width: 40%;
+            background: #229ec4;
+        }
+        section:nth-child(4)>div>h6:nth-child(11){
+            position: relative;
+            font-style: revert;
+            color: black;
+            left: 130px;
+            font-size: 30px;
+            font-style: oblique;
+            top: 10px;
+            width: 400px;
+            margin: 0px;
+        }
+        section:nth-child(4)>div>div:nth-child(12){
+            position: relative;
+            width: 400px;
+            height: 5px;
+            background: white;
+            border-style: groove;
+            left: 130px;
+            top: 10px;
+        }
+        section:nth-child(4)>div>div:nth-child(12)>div{
+            position: relative;
+            height: 5px;
+            width: 30%;
+            background: #229ec4;
+        }
+        section:nth-child(4)>nav{
+            position: relative;
+            width: 900px;
+            height: 120px;
+            display: inline-flex;
+            top: 100px;
+            left: 200px;
+            flex-direction: row-reverse;
+            justify-content: space-evenly;
+        }
+        section:nth-child(4)>nav>div{
+            border-style: groove;
+            width: 100px;
+            height: 100px;
+            background: #d6ebc0;
+            box-shadow: 1px 4px 7px 2px #424c6b;
+            transition: all 1s ease;
+        }
+        section:nth-child(4)>div{
+            position: relative;
+        }
+        section:nth-child(4)>nav>div:hover{
+            margin: 20px;
+            transition: all 0.2s;
+            background: #f39c12;
+        }
+        section:nth-child(4)>nav>div>h1{
+            font-size: 20px;
+            margin: 0px;
+            color: #0b0d58;
+            top: 66px;
+            left: 23px;
+            right: 0px;
+            /* padding-left: 20px; */
+            position: relative;
+        }
+        section:nth-child(4)>nav>div>img{
+            width: 50px;
+            position: relative;
+            right: -16px;
+            top: -27px;
+            padding: 10px;
+        }
+
+        section:nth-child(5){
+            width: 98vw;
+            height: 445px;
+            background: white;
+        }
+        section:nth-child(5)>h1:nth-child(1){
+            position: relative;
+            margin: 0px;
+            font-size: 80px;
+            color: #f39c12;
+            text-shadow: -12px -9px 7px black;
+            text-decoration-line: underline;
+            left: 500px;
+            top: 20px;
+        }
+        section:nth-child(5)>div{
+            position: relative;
+            width: 30px;
+            height: 30px;
+            background: #229ec4;
+            border-radius: 100%;
+        }
+        section:nth-child(5)>h1{
+            position: relative;
+            font-size: 40px;
+            color: black;
+            margin: 0px;
+            cursor: pointer;
+            width: 300px;
+        }
+        section:nth-child(5)>div:nth-child(2){
+            left: 150px;
+            top: 100px;
+        }
+        section:nth-child(5)>h1:nth-child(3){
+            left: 190px;
+            top: 61px;
+        }
+        section:nth-child(5)>div:nth-child(4){
+            left: 150px;
+            top: 150px;
+        }
+        section:nth-child(5)>h1:nth-child(5){
+            left: 190px;
+            top: 110px;
+        }
+        section:nth-child(5)>div:nth-child(6){
+            left: 800px;
+            top: -52px;
+        }
+        section:nth-child(5)>h1:nth-child(7){
+            left: 845px;
+            top: -90px;
+        }
+        section:nth-child(5)>div:nth-child(8){
+            left: 800px;
+            top: -2px;
+        }
+        section:nth-child(5)>h1:nth-child(9){
+            left: 845px;
+            top: -40px;
+        }
+
+        section:nth-child(6){
+            width: 98vw;
+            height: 525px;
+            background: white;
+        }
+        section:nth-child(6)>h1:nth-child(1){
+            position: relative;
+            margin: 0px;
+            width: 400px;
+            font-size: 80px;
+            color: #f39c12;
+            text-shadow: -12px -9px 7px black;
+            text-decoration-line: underline;
+            left: 500px;
+            top: 20px;
+        }
+        section:nth-child(6)>div{
+            position: relative;
+            width: 200px;
+            height: 300px;
+            background: red;
+            cursor: pointer;
+        }
+        section:nth-child(6)>div:nth-child(2){
+            border-style: groove;
+            left: 200px;
+            top: 100px;
+        }
+        section:nth-child(6)>div:nth-child(3){
+            border-style: groove;
+            left: 600px;
+            top: -206px;
+        }
+        section:nth-child(6)>div:nth-child(4){
+            border-style: groove;
+            left: 1000px;
+            top: -512px;
+        }
+        section:nth-child(6)>div>h1{
+            font-size: 34px;
+            margin: 0px;
+            color: red;
+            position: relative;
+            top: -170px;
+            filter: blur(1px);
+            border-style: groove;
+            border-collapse: separate;
+        }
+        section:nth-child(6)>div:hover{
+            filter: blur(5px);
+            border-style: groove;
+            border-bottom-color: black;
+            transition: all 2s;
+        }
+        section:nth-child(6)>div>img{
+            width: 200px;
+            height: 300px;
+            position: relative;
+        }
+
+        section:nth-child(7){
+            width: 98vw;
+            height: 525px;
+            background: white;
+        }
+        section:nth-child(7)>h1:nth-child(1){
+            position: relative;
+            margin: 0px;
+            width: 500px;
+            font-size: 50px;
+            color: #24134f;
+            /* text-shadow: -12px -9px 7px black; */
+            text-decoration-line: underline;
+            left: 400px;
+            top: 20px;
+        }
+        section:nth-child(7)>div:nth-child(2)>img{
+            width: 80px;
+            position: absolute;
+            border-style: groove;
+        }
+        section:nth-child(7)>div:nth-child(2){
+            background: white;
+            position: relative;
+            left: 23px;
+            top: 40px;
+            width: 95vw;
+            height: 300px;
+            border: 5px groove #424c6b;
+        }
+        section:nth-child(7)>div:nth-child(2)>img:nth-child(1){
+            top: 10px;
+            left: 100px;
+        }
+        section:nth-child(7)>div:nth-child(2)>img:nth-child(2){
+            top: 10px;
+            left: 525px;
+        }
+        section:nth-child(7)>div:nth-child(2)>img:nth-child(3){
+            top: 10px;
+            left: 1050px;
+        }
+        section:nth-child(7)>div:nth-child(2)>h1{
+            position: relative;
+            font-size: 20px;
+            margin: 0px;
+            width: 400px;
+        }
+        section:nth-child(7)>div:nth-child(2)>h1:nth-child(4){
+            top: 80px;
+            left: 90px;
+        }
+        section:nth-child(7)>div:nth-child(2)>h1:nth-child(5){
+            top: 80px;
+            left: 520px;
+        }
+        section:nth-child(7)>div:nth-child(2)>h1:nth-child(6){
+            top: 53px;
+            left: 1050px;
+            width: 200px;
+        }
+        section:nth-child(7)>div:nth-child(3){
+            width: 98vw;
+            height: 70px;
+            background: #424c6b;
+            position: relative;
+            top: 70px;
+            left: 5px;
+        }
+        section:nth-child(7)>div:nth-child(3)>h1:nth-child(1){
+            font-size: 20px;
+            color: #f39c12;
+            position: relative;
+            left: 375px;
+            width: 500px;
+            top: 20px;
+            font-family: 'MuseoModerno', cursive;
+            margin: 0px;
+        }
+        section:nth-child(7)>div:nth-child(3)>h2:nth-child(2){
+            font-size: 30px;
+            color: orangered;
+            position: relative;
+            left: 700px;
+            width: 360px;
+            top: -5px;
+            font-family: 'MuseoModerno', cursive;
+            margin: 0px;
+        }
+
+        a:link{
+            text-decoration-line: none;
+            text-decoration: none;
+        }
+        a:visited{
+            text-decoration: black;
+        }
+
+    </style>
+
+</head>
+<body>
+    <section>
+    <div>
+        <nav>
+            <ul>
+                <li><a href="#_nipun">Home</a></li>
+                <li><a href="#_about_me">About Me</a></li>
+                <li><a href="#_skills">Skills</a></li>
+                <li><a href="#_assignment">Assignment</a></li>
+                <li><a href="#_project">Projects</a></li>
+                <li><a href="#_contact">Contact Me</a></li>
+            </ul>
+        </nav>
+    </div>
+</section>
+
+    <section>
+        <img src="../insert/logo/myBlack.jpg" alt="">
+        <img src="../insert/logo/nn.png" alt="">
+        <h1 id="_nipun">NIPUN </h1>
+        <h2>CHATHURANGA</h2>
+        <h3>Software Engineer && Web Developer</h3>
+        <h4>Hello I'm,</h4>
+
+    </section>
+    <section>
+        <h1 id="_about_me">A</h1>
+        <h2>bout me..</h2>
+        <div>
+            <p>    My name is Nipun Chathuranga. I am 21 years old.
+                I am a Software Engineer student at the Institute of Jave  Software Engineering(IJSE).
+                I like develop games and mobile application.
+            </p>
+        </div>
+        <img src="../insert/logo/my.jpg" alt="">
+    </section>
+    <section>
+        <h1 id="_skills">Skills</h1>
+        <div>
+            <h1>JAVA</h1>
+            <div><div></div></div>
+            <h2>DBMS</h2>
+            <div><div></div></div>
+            <h3>HTML</h3>
+            <div><div></div></div>
+            <h4>CSS</h4>
+            <div><div></div></div>
+            <h5>JS</h5>
+            <div><div></div></div>
+            <h6>PHOTOSHOP</h6>
+            <div><div></div></div>
+        </div>
+        <nav>
+            <div><h1>JAVA</h1><img src="../insert/logo/java.png" alt=""></div>
+            <div><h1>DBMS</h1><img src="../insert/logo/dbms.jpg" alt=""></div>
+            <div><h1>P.S.</h1><img src="../insert/logo/ps.jpg" alt=""></div>
+            <div><h1>CSS</h1><img src="../insert/logo/css.webp" alt=""></div>
+            <div></i><h1>JS</h1><img src="../insert/logo/js.png" alt=""></div>
+            <div></i><h1>HTML</h1><img src="../insert/logo/html.png" alt=""></div>
+        </nav>
+    </section>
+    <section>
+        <h1 id="_assignment">Assignment</h1>
+        <div></div>
+        <h1><a href="../assignment/Slider/Slider.html" target="_blank">CSS Slider</a></h1>
+        <div></div>
+        <h1><a href="../assignment/Slider/colorChange.html" target="_blank">Color Change</a></h1>
+        <div></div>
+        <h1><a href="../assignment/Slider/rider.html" target="_blank">Knight rider security</a></h1>
+        <div></div>
+        <h1><a href="../assignment/Slider/pos.html" target="_blank">Pos System</a></h1>
+    </section>
+    <section>
+        <h1 id="_project">Project</h1>
+        <div><img src="../insert/logo/project_1.jpg" alt=""><h1>PROJECT_1</h1></div>
+        <div><img src="../insert/logo/Project_2.jpg" alt=""><h1>PROJECT_2</h1></div>
+        <div><img src="../insert/logo/project_3.jpg" alt=""><h1>PROJECT_3</h1></div>
+    </section>
+    <section>
+        <h1 id="_contact">Contact me...</h1>
+        <div>
+            <img src="../insert/logo/email.jpg" alt="">
+            <img src="../insert/logo/fb.jpg" alt="">
+            <img src="../insert/logo/wA.webp" alt="">
+            <h1>nipunc1999@gmail.com</h1>
+            <h1>aaaaa</h1>
+            <h1>+94763414836</h1>
+        </div>
+        <div>
+            <h1>Designed & Developed With by :</h1>
+            <h2>NIPUN CHATHURANGA</h2>
+        </div>
+    </section>
+
+</body>
+</html>

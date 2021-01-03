@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS Slider</title>
+    <link href="assests/css/normalize.css" rel="stylesheet">
+    <style>
+        body > section:nth-child(1) {
+            width: 1024px;
+            height: 500px;
+            border: 1px solid gray;
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+            overflow: hidden;
+        }
+
+        body > section:nth-child(1) > section {
+            width: 500%;
+            height: 100%;
+            display: flex;
+            /*animation: sliderAnimation 15s infinite alternate;*/
+        }
+
+        body > section:nth-child(1) > section > div {
+            width: 100%;
+            height: 100%;
+        }
+
+        body > section:nth-child(1) > section > div:nth-child(1) {
+            background: url("assests/img/1.jpg");
+            background-position: center;
+            background-size: cover;
+        }
+
+        body > section:nth-child(1) > section > div:nth-child(2) {
+            background: url("assests/img/2.jpg");
+            background-position: center;
+            background-size: cover;
+        }
+
+        body > section:nth-child(1) > section > div:nth-child(3) {
+            background: url("assests/img/3.jpg");
+            background-position: center;
+            background-size: cover;
+        }
+
+        body > section:nth-child(1) > section > div:nth-child(4) {
+            background: url("assests/img/4.jpg");
+            background-position: center;
+            background-size: cover;
+        }
+
+        body > section:nth-child(1) > section > div:nth-child(5) {
+            background: url("assests/img/5.jpg");
+            background-position: center;
+            background-size: cover;
+        }
+        h1,h2{
+
+        }
+
+        /*@keyframes sliderAnimation {*/
+        /*    0%,20% {*/
+        /*        transform: translateX(0);*/
+        /*    }*/
+        /*    25%,40% {*/
+        /*        transform: translateX(-20%);*/
+        /*    }*/
+        /*    45%,60% {*/
+        /*        transform: translateX(-40%);*/
+        /*    }*/
+        /*    65%,80% {*/
+        /*        transform: translateX(-60%);*/
+        /*    }*/
+        /*    85%,100% {*/
+        /*        transform: translateX(-80%);*/
+        /*    }*/
+        /*}*/
+        button:nth-child(2){
+            position: absolute;
+            left: 750px;
+            top: 590px;
+            font-size: 50px;
+        }
+        button:nth-child(3){
+            position: absolute;
+            left: 450px;
+            top: 590px;
+            font-size: 50px;
+        }
+    </style>
+</head>
+<body>
+<section>
+    <section id="one">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </section>
+    
+</section>
+<button id="btnNext">NEXT</button>
+<button id="btnPreview">Preview</button>
+
+<script src="assests/jquery-3.5.1.min.js"></script>
+<script>
+    var count = 0;
+    $('#btnNext').click(function () {
+        count=count+20;
+        if (count==80){
+            count=0;
+        }
+        $('#one').css({
+            'transform' : 'translateX(-'+count+'%)',
+            'transition' : 'all 2s'
+        });
+    });
+
+    $('#btnPreview').click(function () {
+        if (count==0){
+            count=80;
+        }
+        count=count-20;
+        $('#one').css({
+            'transform' : 'translateX(-'+count+'%)',
+            'transition' : 'all 2s'
+        });
+    });
+</script>
+</body>
+</html>
